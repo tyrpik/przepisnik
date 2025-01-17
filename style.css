@@ -1,0 +1,269 @@
+/* Reset some default styles * { margin: 0; padding: 0; box-sizing: border-box; }*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Czcionka Indie Flower i Geologica*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kumbh+Sans&display=swap');
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Kumbh Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "YOPQ" 300;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Zapewnia, że nagłówek jest na wierzchu innych elementów */
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+nav {
+    /*background-color: #333;*/
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "HEXP" 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    /* Usunięcie podkreślenia */
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    /* Efekt przejścia */
+}
+
+nav a:hover {
+    background-color: #575757;
+    /* Tło po najechaniu */
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+aside {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px 0;
+}
+
+section {
+    flex: 2;
+    padding: 20px 30px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 20px;
+}
+
+h2 {
+    flex-basis: 100%;
+}
+
+h1 {
+    flex-basis: 100%;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+article a {
+    text-decoration: none;
+    color: #575757;
+    transition: color 0.3s;
+}
+
+article a:hover {
+    color: #800000;
+}
+
+.nazwapodstrony {
+    font-size: 15px;
+    text-align: center;
+    color: #800000;
+    font-weight: bold;
+}
+
+.naglowek {
+    font-family: "Geologica", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #800000;
+    font-weight: bold;
+}
+
+.liczba-porcji {
+    font-size: 12px;
+    color: #575757;
+    line-height: 1.5em;
+}
+
+.spis-tresci {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: #c2b280;
+    border-radius: 40px;
+    padding: 40px 80px;
+    color: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.5em;
+    width: 50%;
+    margin: auto;
+}
+
+.spis-tresci h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.spis-tresci a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+}
+
+.spis-tresci li {
+    color: white;
+}
+
+.spis-tresci a:hover {
+    color: #800000;
+}
+
+.main-naglowek {
+    text-align: center;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+.main-tekst {
+    width: 90%;
+    margin: auto;
+}
+
+.main-tekst p {
+    margin-bottom: 20px;
+}
+
+.main-tekst iframe {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.przepisy {
+    width: 90%;
+    margin: auto;
+}
+
+.tabela {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #c2b280;
+    border-radius: 40px;
+    overflow: hidden;
+
+}
+
+.tabela td {
+    padding: 12px 15px;
+    border: 3px solid white;
+    border-radius: 40px;
+    text-align: left;
+}
+
+.tabela th {
+    padding: 12px 15px;
+    border: 3px solid white;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.tabela tr:first-child th:first-child {
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.tabela tr:first-child th:last-child {
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.tabela tr:last-child td:first-child {
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+.tabela tr:last-child td:last-child {
+    border-bottom: 0px;
+    border-right: 0px;
+}
+
+.tabela tr:last-child td:nth-child(2) {
+    border-bottom: 0px;
+}
+
+.tabela tr:last-child td:nth-child(3) {
+    border-bottom: 0px;
+}
+
+.tabela tr:nth-child(1) td:first-child {
+    border-left: 0px;
+}
+
+.tabela tr:nth-child(2) td:first-child {
+    border-left: 0px;
+}
+
+.tabela tr:nth-child(1) td:last-child {
+    border-right: 0px;
+}
+
+.tabela tr:nth-child(2) td:last-child {
+    border-right: 0px;
+}
